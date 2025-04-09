@@ -9,7 +9,7 @@ struct vec2 {
   float x;
   float y;
 
-  vec2() : x(0),y(0) {}
+  vec2() : x(0), y(0) {}
   vec2(float x, float y) : x(x), y(y) {}
 
   // Raylib conversions
