@@ -17,6 +17,14 @@ struct VerletObject {
       : pos(vec2(x, y)), prev_pos(vec2(x, y)), mass(mass), color(color) {}
 };
 
+struct Stick {
+  vec2 start;
+  vec2 end;
+  float length;
+
+  Stick(vec2 start, vec2 end, float length) : start(start), end(end), length(length) {};
+};
+
 class Game : public Demo {
  public:
   std::vector<Circle> circles;

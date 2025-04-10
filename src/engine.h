@@ -1,9 +1,14 @@
+#include <format>
+
+#include "object.h"
 
 class Engine {
  public:
-  std::vector<Object*> objects;
+  std::vector<Object> objects;
 
-  // void add_object(std::unique_ptr<Object> obj) { objects.emplace_back(obj); }
+  void add_object() {
+    // objects.emplace_back(obj);
+  }
 
   // void remove_object(Object* obj) {
   //   if (!obj) return;

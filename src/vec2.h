@@ -17,8 +17,8 @@ struct vec2 {
   operator Vector2() const { return {x, y}; }
 
   // Addition
-  vec2 operator+(const vec2& other) const { 
-    return {x + other.x, y + other.y}; 
+  vec2 operator+(const vec2& other) const {
+    return {x + other.x, y + other.y};
   }
   void operator+=(const vec2& other) {
     x += other.x;
@@ -30,7 +30,7 @@ struct vec2 {
   }
 
   // Subtraction
-  vec2 operator-(const vec2& other) const { 
+  vec2 operator-(const vec2& other) const {
     return {x - other.x, y - other.y};
   }
   void operator-=(const vec2& other) {
@@ -44,7 +44,7 @@ struct vec2 {
 
   // Muliplication
   vec2 operator*(float scalar) const {
-    return {x * scalar, y *scalar};
+    return {x * scalar, y * scalar};
   }
   void operator*=(float scalar) {
     x *= scalar;
@@ -101,4 +101,3 @@ struct vec2 {
     return stream;
   }
 };
-
